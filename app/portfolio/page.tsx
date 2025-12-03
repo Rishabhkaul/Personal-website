@@ -1,7 +1,6 @@
 export default function PortfolioPage() {
   return (
-    <main className="mx-auto max-w-2xl py-16">
-      <h1 className="text-3xl font-bold mb-6">Portfolio</h1>
+    <main className="ml-6 space-y-2">
       <p className="mb-4">
         Some of the companies I’ve invested in:
       </p>
