@@ -6,6 +6,5 @@ export default function PortfolioPage() {
         <li>Company B – short description</li>
         <li>Fund C – short description</li>
       </ul>
-    </main>
   );
 }
