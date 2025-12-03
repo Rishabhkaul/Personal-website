@@ -1,6 +1,6 @@
 export default function PortfolioPage() {
   return (
-<ul className="list-none space-y-2">
+           <ul className="list-none space-y-2">
   <li>
     <a href="https://peec.ai" target="_blank" rel="noopener noreferrer">
       Peec AI
@@ -37,4 +37,61 @@ export default function PortfolioPage() {
     </a>
   </li>
   <li>
-    <a href="https
+    <a href="https://arcjet.dev" target="_blank" rel="noopener noreferrer">
+      Arcjet
+    </a>
+  </li>
+  <li>
+    <a href="https://www.springtail.io/" target="_blank" rel="noopener noreferrer">
+      Springtail
+    </a>
+  </li>
+  <li>
+    <a href="https://nudgenow.com" target="_blank" rel="noopener noreferrer">
+      Nudge
+    </a>
+  </li>
+  <li>
+    <a href="https://superk.in" target="_blank" rel="noopener noreferrer">
+      SuperK
+    </a>
+  </li>
+  <li>
+    <a href="https://warpbuild.com" target="_blank" rel="noopener noreferrer">
+      Warpbuild
+    </a>
+  </li>
+  <li>
+    <a href="https://openwrench.com" target="_blank" rel="noopener noreferrer">
+      Openwrench
+    </a>
+  </li>
+  <li>
+    <a href="https://kodif.ai" target="_blank" rel="noopener noreferrer">
+      Kodif
+    </a>
+  </li>
+  <li>
+    <a href="https://www.inuka.vc" target="_blank" rel="noopener noreferrer">
+      Inuka Capital
+    </a>
+  </li>
+  <li>
+    <a href="https://bitespeed.co" target="_blank" rel="noopener noreferrer">
+      Bitespeed
+    </a>
+  </li>
+  <li>
+    <a href="https://fermion.app" target="_blank" rel="noopener noreferrer">
+      Fermion
+    </a>
+  </li>
+  <li>
+    <a href="https://pagarbook.com" target="_blank" rel="noopener noreferrer">
+      Pagarbook
+    </a>
+  </li>
+  <li>Requestly – acquired by Browserstack</li>
+  <li>Taxscouts – acquired by Taxfin</li>
+  <li>Partykit – acquired by Cloudflare</li>
+</ul>
