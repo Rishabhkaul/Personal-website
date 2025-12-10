@@ -5,7 +5,7 @@ export default function PortfolioPage() {
         Some of the companies I’ve invested in:
       </p>
 
-      <ul className="list-none space-y-2">
+      <ul className="list-none">
         <li>
           <a href="https://peec.ai" target="_blank" rel="noopener noreferrer">
             Peec AI
