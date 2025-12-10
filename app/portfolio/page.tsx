@@ -71,7 +71,7 @@ export default function PortfolioPage() {
           </a>
         </li>
         <li>
-          <a href="https://openwrench.com" target="_blank" rel="noopener noreferrer" className="hover:underline">
+          <a href="https://useopenwrench.com" target="_blank" rel="noopener noreferrer" className="hover:underline">
             Openwrench
           </a>
         </li>
