@@ -1,6 +1,6 @@
 export default function PortfolioPage() {
   return (
-    <main className="ml-6">
+    <main className="mb-4">
       <p className="mb-4">
         Some of the companies I’ve invested in:
       </p>
