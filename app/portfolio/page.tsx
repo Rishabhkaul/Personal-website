@@ -31,6 +31,11 @@ export default function PortfolioPage() {
           </a>
         </li>
         <li>
+          <a href="https://duku.ai" target="_blank" rel="noopener noreferrer" className="hover:underline">
+            Duku AI
+          </a>
+        </li>
+        <li>
           <a href="https://budy.bot" target="_blank" rel="noopener noreferrer" className="hover:underline">
             Budy
           </a>
