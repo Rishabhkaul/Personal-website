@@ -51,11 +51,6 @@ export default function PortfolioPage() {
           </a>
         </li>
         <li>
-          <a href="https://www.springtail.io/" target="_blank" rel="noopener noreferrer" className="hover:underline">
-            Springtail
-          </a>
-        </li>
-        <li>
           <a href="https://nudgenow.com" target="_blank" rel="noopener noreferrer" className="hover:underline">
             Nudge
           </a>
@@ -103,6 +98,7 @@ export default function PortfolioPage() {
         <li>Requestly – acquired by Browserstack</li>
         <li>Taxscouts – acquired by Taxfin</li>
         <li>Partykit – acquired by Cloudflare</li>
+        <li>Springtail – acquired by Shopify</li>
       </ul>
     </main>
   );
