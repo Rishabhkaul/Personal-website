@@ -1,4 +1,4 @@
-# Portfolio Blog Starter
+# Rishabh Personal Site
 
 This is a porfolio site template complete with a blog. Includes:
 
