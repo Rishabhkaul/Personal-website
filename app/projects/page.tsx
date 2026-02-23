@@ -1,4 +1,11 @@
 const projects = [
+  {
+    name: 'Macro Risk Dashboard',
+    url: 'https://macro-risk-dashboard.streamlit.app/',
+    description:
+      'Dashboard to track the risk of catastrophic failure in the global economy',
+    githubUrl: 'https://github.com/Rishabhkaul/macro-risk-dashboard',
+  },
   'Founder and operator initiatives across Europe, India, and the US.',
   'Angel investments and advisory support for early-stage startups.',
   'Community events and meetups focused on startups and technology.',
@@ -13,7 +20,34 @@ export default function ProjectsPage() {
       </p>
       <ul className="list-disc pl-5 space-y-2">
         {projects.map((project) => (
-          <li key={project}>{project}</li>
+          <li
+            key={typeof project === 'string' ? project : project.name}
+          >
+            {typeof project === 'string' ? (
+              project
+            ) : (
+              <>
+                <a
+                  href={project.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="underline"
+                >
+                  {project.name}
+                </a>{' '}
+                - {project.description} (
+                <a
+                  href={project.githubUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="underline"
+                >
+                  github
+                </a>
+                )
+              </>
+            )}
+          </li>
         ))}
       </ul>
     </main>
