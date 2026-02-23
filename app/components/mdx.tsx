@@ -1,8 +1,9 @@
 import Link from 'next/link'
 import Image from 'next/image'
-import { MDXRemote } from 'next-mdx-remote/rsc'
+import { compile, run } from '@mdx-js/mdx'
 import { highlight } from 'sugar-high'
 import React from 'react'
+import * as runtime from 'react/jsx-runtime'
 
 function Table({ data }) {
   let headers = data.headers.map((header, index) => (
@@ -99,9 +100,19 @@ let components = {
   Table,
 }
 
-export function CustomMDX(props) {
+export async function CustomMDX(props) {
+  let code = String(
+    await compile(props.source, {
+      outputFormat: 'function-body',
+    })
+  )
+  let { default: Content } = await run(code, {
+    ...runtime,
+    baseUrl: import.meta.url,
+  })
+
   return (
-    <MDXRemote
+    <Content
       {...props}
       components={{ ...components, ...(props.components || {}) }}
     />
