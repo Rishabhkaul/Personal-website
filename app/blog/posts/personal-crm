@@ -1,0 +1,257 @@
+# LinkedIn Should Build a Personal CRM
+
+Everyone wants one. That there is a need for such a product has been known for many years. Imagine being able to ask questions like these about your professional network.
+
+- “Which founders in my network raised venture funding in the last 12 months?”
+- “Which of my friends might have lived in France at some point in their lives?”
+- “Who in my network works at AI companies that are beyond Series A and I haven’t spoken to in over a year?”
+
+These are incredibly useful questions because they combine three things at once:
+
+- Who someone is  
+- How well you know them  
+- What they are doing right now  
+
+And yet, surprisingly, none of these questions are easy to answer today.
+
+Not on LinkedIn.  
+Not in email.  
+Not in any personal CRM.
+
+At first glance, this feels like a product problem. But it’s actually a **data architecture problem**. Most systems only see fragments of your professional relationships. LinkedIn is the only place where the **identity and context layers of the professional world live**.
+
+---
+
+# The Graveyard of the Personal CRM
+
+It's not lack of trying.
+
+For more than a decade, founders have tried to build tools to help people manage relationships better.
+
+Some companies took an **API-led approach**, integrating with systems that already contained fragments of our communication history (Fullcontact).
+
+Others built elegant products around **email and calendar data** (Clara, SignalFX).
+
+Some attempted to construct contact graphs by connecting **Twitter, messaging platforms, and various other services** that exposed APIs.
+
+Many have pivoted, shut down, or been acquired. Some are still operating like **Clay (not the GTM one).**
+
+Many of these products were thoughtful and well designed. Several raised meaningful venture funding.
+
+Yet almost all of them eventually stalled.
+
+The idea itself was never the problem.
+
+The problem was **structural**.
+
+The **context of a person lives in exactly one place: LinkedIn.**
+
+---
+
+# The Three Ingredients of a Useful Network System
+
+To answer meaningful questions about your network, a system needs three ingredients.
+
+### 1. Identity
+Who someone is.
+
+### 2. Context
+What they do, where they work, and what they’ve done before.
+
+### 3. Relationship Strength
+How well you know them.
+
+Email and calendar systems capture **relationship strength**. They know who you communicate with frequently.
+
+Personal CRMs built on top of communication data capture **interaction history**.
+
+But the **identity and context layers live almost entirely on LinkedIn**.
+
+Without those layers, a personal CRM can tell you who you talk to the most. But it cannot tell you **who in your network matters for a specific opportunity.**
+
+---
+
+# What Parts of Personal CRMs Actually Worked
+
+It’s worth acknowledging the parts of the personal CRM idea that did work.
+
+Most professionals already use something that behaves like a **lightweight personal CRM every day: their email inbox.**
+
+Your inbox already contains a surprising amount of relationship data:
+
+- Who you communicate with frequently  
+- How often conversations happen  
+- How recently you interacted  
+
+If you search your email for a person’s name, you can quickly see the **history of your interactions**.
+
+In that sense, email systems already capture one of the most important ingredients of a personal CRM: **relationship strength.**
+
+Some tools built entire products around this idea. By integrating with email and calendar data, they could surface insights such as:
+
+- Who you email the most  
+- Which relationships have gone quiet  
+- Which conversations might need a follow-up  
+
+These features were genuinely useful.
+
+Where things started to break down was **search**.
+
+Email can tell you who you talk to frequently. But it cannot easily answer questions like:
+
+- Which founders in my network recently raised funding?
+- Which people I know work at product companies?
+- Which connections moved from India to the United States?
+
+Answering those kinds of questions requires combining:
+
+- Identity
+- Context
+- Relationship strength
+
+Email systems only capture **one of those layers**.
+
+---
+
+# The LinkedIn Data Problem
+
+The obvious solution would have been simple: **integrate LinkedIn.**
+
+But historically LinkedIn made that extremely difficult.
+
+Over time LinkedIn significantly restricted access to its APIs and shut down many third-party integrations that depended on LinkedIn data. The company has also spent more than a decade aggressively defending the boundaries of its graph.
+
+This includes a long and sometimes litigious history with companies attempting to extract LinkedIn data through scraping.
+
+The most famous example was LinkedIn’s **legal battle with hiQ Labs**, which centered on whether scraping publicly accessible LinkedIn profiles violated the **Computer Fraud and Abuse Act**.
+
+Similar tensions have existed with companies in the sales intelligence ecosystem such as:
+
+- Apollo  
+- Seamless  
+- Others built on scraped LinkedIn profile data  
+
+LinkedIn’s perspective is understandable (yes, it pisses off literally everyone I know).
+
+The **professional identity graph is its most valuable asset.**
+
+In a strange way, LinkedIn’s defensiveness around its data may have unintentionally **killed an entire category of software.**
+
+---
+
+# The Scraping Workaround
+
+Despite the litigation, entire ecosystems have emerged around **scraping public LinkedIn profiles**.
+
+Scraping at scale, however, is **expensive**.
+
+Refreshing large portions of LinkedIn’s profile graph (with its billion+ profiles) can cost anywhere between:
+
+- **$100,000 and $1.5 million per cycle**
+
+depending on the scope and refresh frequency.
+
+(Sidenote: if you are an engineer who has worked on systems like this — dealing with proxies, rate limits, distributed crawlers — you are probably in extremely high demand from the likes of **LinkUp, Exa and other web search API companies**.)
+
+This economic reality explains why most LinkedIn scraping companies focused on **B2B use cases** such as:
+
+- Sales prospecting  
+- Recruiting  
+- CRM enrichment  
+
+These markets generate enough revenue to justify the infrastructure costs.
+
+**Personal CRM historically did not.**
+
+---
+
+# The Manual Upload Workaround
+
+Another common workaround is getting users to **upload their LinkedIn CSV exports**.
+
+This works… until it doesn’t.
+
+The data gets **stale almost immediately.**
+
+Eventually this also leads back to scraping, because once you have the initial data:
+
+1. You repeatedly ask users to upload their data again  
+2. You use the base data to know who they are connected to and then scrape updates  
+
+---
+
+# Why AI Changes the Equation
+
+In many ways, the limiting factor was never the data itself.
+
+LinkedIn has been quietly building the **world’s largest professional graph for nearly two decades.**
+
+The missing piece was the **interface for exploring that graph.**
+
+Generative AI changes this.
+
+Instead of navigating predefined filters, users can simply **describe what they are looking for in natural language**.
+
+Natural language becomes the interface.
+
+Queries like:
+
+> “Which founders in my network raised venture funding recently?”
+
+suddenly become possible.
+
+---
+
+# LinkedIn May Already Be Moving in This Direction
+
+Interestingly, LinkedIn itself appears to be heading in this direction.
+
+A **2026 LinkedIn engineering research paper** describes a semantic search system powered by **large language models** that retrieves people and jobs by meaning rather than keywords.
+
+In other words, LinkedIn engineers are actively experimenting with letting users explore the professional graph through **semantic intent rather than rigid filters.**
+
+That’s a major step toward the kind of interface described earlier.
+
+---
+
+# What’s Still Missing
+
+Two pieces are still missing.
+
+### 1. LinkedIn Engagement Signals
+For example:
+
+- “Who in my network I haven’t messaged in 12 months.”
+
+### 2. First-Party Personal Data
+Connectors for:
+
+- Email
+- Calendars
+- Notes
+- Notion
+- Other personal tools
+
+This would allow the system to understand **both the professional graph and your real relationship history.**
+
+As long as individuals control what data is connected, this doesn’t necessarily create ecosystem problems. In fact, it may make the network **more useful.**
+
+---
+
+# Why the Moment Might Finally Be Right
+
+LinkedIn may not even need external AI providers.
+
+The quality of **open-source LLMs** has improved dramatically, making it possible for companies with proprietary datasets to run powerful models internally.
+
+For the first time, the **technical, product, and data pieces** required to build something like this may all exist simultaneously.
+
+And if that’s the case, the graveyard of personal CRM startups might finally have an explanation.
+
+The problem was never the idea.
+
+The problem was **data gravity**.
+
+And the data gravity lives inside **LinkedIn**.
+
+If the interface layer is finally catching up to the graph, maybe we will finally get that **personal CRM after all.**
