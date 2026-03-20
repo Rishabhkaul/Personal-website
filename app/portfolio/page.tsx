@@ -6,6 +6,16 @@ export default function PortfolioPage() {
       </p>
       <ul className="list-none flex flex-wrap gap-x-4 gap-y-2">
         <li>
+          <a href="https://mubit.ai" target="_blank" rel="noopener noreferrer" className="hover:underline">
+            MuBit
+          </a>
+        </li>
+        <li>
+          <a href="https://prefrontal.ai" target="_blank" rel="noopener noreferrer" className="hover:underline">
+            Prefrontal AI
+          </a>
+        </li>
+        <li>
           <a href="https://peec.ai" target="_blank" rel="noopener noreferrer" className="hover:underline">
             Peec AI
           </a>
