@@ -103,9 +103,9 @@ export default function SpeakingPage() {
   return (
     <main className="mb-4">
       <h1 className="mb-6 text-2xl font-semibold tracking-tighter">Speaking</h1>
-      <ul className="space-y-3">
+      <ul className="space-y-6">
         {speakingEngagements.map((engagement) => (
-          <li key={`${engagement.monthYear}-${engagement.name}`} className="leading-relaxed">
+          <li key={`${engagement.monthYear}-${engagement.name}`} className="space-y-1.5 leading-relaxed">
             <div>
               <span className="text-neutral-600 dark:text-neutral-400">[{engagement.monthYear}]</span>{' '}
               <a
@@ -117,25 +117,12 @@ export default function SpeakingPage() {
                 {engagement.name}
               </a>
             </div>
-            <div className="mt-1 flex items-center gap-2">
+            <div className="flex items-center gap-2">
               <span className="text-neutral-700 dark:text-neutral-300">{engagement.location}</span>
-              <span className="inline-flex items-center rounded-md bg-neutral-100 px-2 py-0.5 text-xs font-medium text-neutral-700 ring-1 ring-inset ring-neutral-300 dark:bg-neutral-800 dark:text-neutral-200 dark:ring-neutral-700">
+              <span className="inline-flex items-center rounded-md bg-black px-2 py-0.5 text-xs font-medium text-white dark:bg-white dark:text-black">
                 {engagement.tag}
               </span>
             </div>
-            <span className="text-neutral-600 dark:text-neutral-400">[{engagement.monthYear}]</span>{' '}
-            <a
-              href={engagement.url}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="underline"
-            >
-              {engagement.name}
-            </a>{' '}
-            <span className="text-neutral-700 dark:text-neutral-300">{engagement.location}</span>{' '}
-            <span className="inline-flex items-center rounded-md bg-neutral-100 px-2 py-0.5 text-xs font-medium text-neutral-700 ring-1 ring-inset ring-neutral-300 dark:bg-neutral-800 dark:text-neutral-200 dark:ring-neutral-700">
-              {engagement.tag}
-            </span>
           </li>
         ))}
       </ul>
