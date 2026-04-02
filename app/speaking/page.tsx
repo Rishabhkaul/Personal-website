@@ -123,6 +123,19 @@ export default function SpeakingPage() {
                 {engagement.tag}
               </span>
             </div>
+            <span className="text-neutral-600 dark:text-neutral-400">[{engagement.monthYear}]</span>{' '}
+            <a
+              href={engagement.url}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="underline"
+            >
+              {engagement.name}
+            </a>{' '}
+            <span className="text-neutral-700 dark:text-neutral-300">{engagement.location}</span>{' '}
+            <span className="inline-flex items-center rounded-md bg-neutral-100 px-2 py-0.5 text-xs font-medium text-neutral-700 ring-1 ring-inset ring-neutral-300 dark:bg-neutral-800 dark:text-neutral-200 dark:ring-neutral-700">
+              {engagement.tag}
+            </span>
           </li>
         ))}
       </ul>
