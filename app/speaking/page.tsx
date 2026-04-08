@@ -39,7 +39,7 @@ const speakingEngagements = [
     name: 'Beyond the AI Hype: How Smart Money Identifies Real Ambition',
     url: 'https://youtu.be/rdFmgqi4jUs?t=2629',
     location: '500 Eurasia Demo Day · Tblisi',
-    tag: 'Investing','AI'
+    tag: 'AI',
   },
   {
     monthYear: 'Jul 2025',
