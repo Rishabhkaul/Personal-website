@@ -1,10 +1,17 @@
 const speakingEngagements = [
   {
+    monthYear: 'Apr 2026',
+    name: 'From Vision to Viral',
+    url: 'https://luma.com/c1dckfq4',
+    location: 'Wise · London',
+    tag: 'Strategy','Fundraising',
+  },
+  {
     monthYear: 'Mar 2026',
     name: 'Entrepreneurial Finance Class',
     url: 'https://www.linkedin.com/feed/update/urn:li:activity:7441823403856240640/?originTrackingId=jO9zokaT7vxepJtKhrCoMg%3D%3D',
     location: 'London School of Economics · London',
-    tag: 'Strategy',
+    tag: 'Strategy','Fundraising',
   },
   {
     monthYear: 'Jan 2026',
@@ -18,7 +25,7 @@ const speakingEngagements = [
     name: 'State of Asian Funding Report UK Launch Panel',
     url: 'https://www.linkedin.com/posts/rishabhkaul_packed-out-room-for-bae-hqs-state-of-activity-7381695911552512000-wl1B/?utm_source=share&utm_medium=member_desktop&rcm=ACoAAAE38M4Buy_Jz3DtnUXiPmsl_rTI8owBvPw',
     location: 'BAE HQ / HSBC Innovation Banking · London',
-    tag: 'Investing',
+    tag: 'Investing','Fundraising',
   },
   {
     monthYear: 'Oct 2025',
@@ -32,7 +39,7 @@ const speakingEngagements = [
     name: 'Beyond the AI Hype: How Smart Money Identifies Real Ambition',
     url: 'https://youtu.be/rdFmgqi4jUs?t=2629',
     location: '500 Eurasia Demo Day · Tblisi',
-    tag: 'Investing',
+    tag: 'Investing','AI'
   },
   {
     monthYear: 'Jul 2025',
