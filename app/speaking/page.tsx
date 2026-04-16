@@ -2,7 +2,7 @@ const speakingEngagements = [
   {
     monthYear: 'Apr 2026',
     name: 'From Vision to Viral',
-    url: 'https://luma.com/c1dckfq4',
+    url: 'https://www.linkedin.com/posts/wiseaccount_what-do-wise-bolt-and-jenki-have-in-common-activity-7450174535607214080-Oj1j',
     location: 'Wise · London',
     tag: 'Strategy',
   },
