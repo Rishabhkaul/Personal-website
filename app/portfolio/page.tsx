@@ -2,7 +2,7 @@ export default function PortfolioPage() {
   return (
     <main className="mb-4">
       <p className="mb-4">
-        Some of the companies I've invested in:
+        Some of the companies I'm involved with either as an investor or formal advisor:
       </p>
       <ul className="list-none flex flex-wrap gap-x-4 gap-y-2">
         <li>
