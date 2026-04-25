@@ -1,5 +1,11 @@
 const projects = [
   {
+    name: 'Github Scout',
+    url: 'https://ghscout.streamlit.app/',
+    description:
+      'Page rank to surface emerging Github projects',
+  },
+  {
     name: 'Macro Risk Dashboard',
     url: 'https://macro-risk-dashboard.streamlit.app/',
     description:
