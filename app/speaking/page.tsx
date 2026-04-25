@@ -1,6 +1,20 @@
 const speakingEngagements = [
   {
     monthYear: 'Apr 2026',
+    name: 'Building AI Native Leadership Teams',
+    url: 'https://www.linkedin.com/feed/update/urn:li:activity:7453442292746645504/',
+    location: 'EUVC Summit · London',
+    tag: 'Hiring',
+  },
+  {
+    monthYear: 'Apr 2026',
+    name: 'VC: Startup to Corporate',
+    url: 'https://youtu.be/UMEj_WVQZHI?t=6420',
+    location: 'Cambridge Judge School of Business · Cambridge',
+    tag: 'Investing',
+  },
+  {
+    monthYear: 'Apr 2026',
     name: 'Ventures Podcast',
     url: 'https://youtu.be/UMEj_WVQZHI?t=6420',
     location: 'Ventures with Viraj Acharya · London',
@@ -9,7 +23,7 @@ const speakingEngagements = [
   {
     monthYear: 'Apr 2026',
     name: 'From Vision to Viral',
-    url: 'https://www.linkedin.com/posts/wiseaccount_what-do-wise-bolt-and-jenki-have-in-common-activity-7450174535607214080-Oj1j',
+    url: 'https://www.youtube.com/watch?v=9ywB5u0Xywk',
     location: 'Wise · London',
     tag: 'Strategy',
   },
