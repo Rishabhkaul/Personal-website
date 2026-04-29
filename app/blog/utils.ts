@@ -16,8 +16,6 @@ function parseFrontmatter(fileContent: string) {
   }
 
   let frontMatterBlock = match[1]
-  // ...rest unchanged
-}
   let content = fileContent.replace(frontmatterRegex, '').trim()
   let frontMatterLines = frontMatterBlock.trim().split('\n')
   let metadata: Partial<Metadata> = {}
@@ -25,7 +23,7 @@ function parseFrontmatter(fileContent: string) {
   frontMatterLines.forEach((line) => {
     let [key, ...valueArr] = line.split(': ')
     let value = valueArr.join(': ').trim()
-    value = value.replace(/^['"](.*)['"]$/, '$1') // Remove quotes
+    value = value.replace(/^['\"](.*)['\"]$/, '$1') // Remove quotes
     metadata[key.trim() as keyof Metadata] = value
   })
 
