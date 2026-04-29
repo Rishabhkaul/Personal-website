@@ -1,0 +1,109 @@
+Over the last few months, I’ve been noticing a pattern across AI startups that would have looked like poor judgment not too long ago.
+
+They’re building both a product *and* an infrastructure layer from the very beginning — not sequentially, but in parallel.
+
+A typical version: a company ships a full application, while also exposing the same capabilities as an API or SDK for others to build on.
+
+Historically, this would be seen as lack of focus.
+
+Most enduring companies didn’t work this way. They picked a wedge. Some started with a product and later abstracted it into a platform (Shopify, Stripe). Others started with infrastructure and moved up the stack (OpenAI and ChatGPT). But in both cases, the sequencing was clear: one layer first, expansion later.
+
+That sequencing now seems to be breaking.
+
+---
+
+## 1. Is this because the world is becoming more headless?
+
+Part of the shift is mechanical. It’s simply easier to build both.
+
+APIs, SDKs, and basic product interfaces can now be generated quickly. What used to be a hard commitment — “we are an API company” or “we are a product company” — is now easier to reverse.
+
+But there’s also a deeper change.
+
+A comment from @mattzcarey at @Cloudflare captures it well:
+
+> For Artifacts (versioned storage) which we just released at Cloudflare, the API is the most important thing. Users are technical and they all have agents. If we can give them good APIs then they can generate simple UIs in house as needed.
+
+This points to a more *headless* world. And that changes the “build vs buy” equation.
+
+Historically, companies bought products because building the full stack (including UI) was expensive and slow. But if the UI layer is cheap to generate, more teams may choose to build their own workflows on top of shared infrastructure.
+
+In that world:
+- The API is what matters  
+- The product is no longer the only way to access value  
+
+And that starts to explain why companies are comfortable launching both layers early.
+
+---
+
+## 2. Are these products actually just demos?
+
+In many cases where you start as a platform or an infra play, the “product” is not quite the product in the traditional sense.
+
+It’s closer to a *reference implementation* — a way of making something tangible that can be experienced, not just integrated.
+
+This isn’t entirely new. SaaS companies have long used templates and demo apps to showcase their platforms. What’s different is that these “demos” are now good enough to stand on their own as full-fledged revenue-generating products.
+
+A recent example: [Mubit](https://mubit.com), an infrastructure layer for agent memory, built Codaph ([https://codaph](https://codaph)) over a weekend as a simple interface on top. Developers flocked to Codaph and that, in turn, drove demand for Mubit.
+
+The product, in this case, wasn’t separate from the infrastructure. It was a *distribution layer* for it.
+
+---
+
+## 3. Or is this just a hedge?
+
+There’s also a simpler explanation: *uncertainty*.
+
+Founders don’t yet know how these capabilities will be consumed.
+
+- Will companies buy applications?
+- Or build their own on top of APIs?
+- Where does differentiation actually sit: model, data, interface, or workflow?
+
+I met a YC company recently that was building a very interesting GTM product — and they were launching an SDK alongside it.
+
+Why? Because they were preparing for a future where teams build GTM products in-house.
+
+In that context, building both starts to look less like confusion and more like a way to stay close to the market while it figures itself out.
+
+---
+
+## But the underlying tension hasn’t gone away
+
+Running a product and an API are fundamentally different problems.
+
+- The buyer is different  
+- The expectations are different  
+- Product teams optimize for speed and iteration  
+- API consumers want stability and consistency  
+
+One founder put it simply: they’ve had strong interest in both their app and their SDK, but running two GTMs in parallel “makes me nervous.”
+
+That concern is real.
+
+It’s easier than ever to *build* both.  
+It is not meaningfully easier to *operate* both.
+
+---
+
+## So what’s actually going on?
+
+This isn’t just a hedge. It’s a shift in how companies are entering the market.
+
+- The **product** drives adoption and learning  
+- The **infrastructure** enables extensibility  
+- **Distribution** depends on where the wedge is  
+
+And both are developed in parallel from the start.
+
+The companies that make this work will still have a clear place where they win first. One layer will carry the weight of early traction. The other will follow.
+
+The wedge hasn’t disappeared. It’s just less obvious upfront.
+
+What’s changed is not the need for focus — it’s that the answer to *where to focus* is harder to see in advance.
+
+And building both is, increasingly, how companies are trying to figure that out.
+
+---
+
+*Thanks: kball, vcarl, @mattzcarey, @notanilp, @hkanji, @steveruizok*
