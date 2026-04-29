@@ -11,7 +11,13 @@ type Metadata = {
 function parseFrontmatter(fileContent: string) {
   let frontmatterRegex = /---\s*([\s\S]*?)\s*---/
   let match = frontmatterRegex.exec(fileContent)
-  let frontMatterBlock = match![1]
+  if (!match?.[1]) {
+    throw new Error('Missing or invalid frontmatter in blog post.')
+  }
+
+  let frontMatterBlock = match[1]
+  // ...rest unchanged
+}
   let content = fileContent.replace(frontmatterRegex, '').trim()
   let frontMatterLines = frontMatterBlock.trim().split('\n')
   let metadata: Partial<Metadata> = {}
