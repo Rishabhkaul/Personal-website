@@ -1,5 +1,12 @@
 const speakingEngagements = [
   {
+    monthYear: 'Jun 2026',
+    name: 'What Happens After You Raise',
+    url: 'https://www.linkedin.com/posts/fedor-gubiev-325a34293_i-walked-into-the-venture-forward-programme-share-7469718092076621824-SC2c/',
+    location: 'Foundervine · London',
+    tag: 'Fundraising',
+  },
+  {
     monthYear: 'Apr 2026',
     name: 'Building AI Native Leadership Teams',
     url: 'https://www.linkedin.com/feed/update/urn:li:activity:7453442292746645504/',
