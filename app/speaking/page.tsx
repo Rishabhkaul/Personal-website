@@ -1,6 +1,13 @@
 const speakingEngagements = [
   {
     monthYear: 'Jun 2026',
+    name: 'Consumer Tech Napkin | Building great teams in consumer tech',
+    url: 'https://www.youtube.com/watch?v=_o-eV1rBaqk',
+    location: 'EU VC · London',
+    tag: 'Hiring',
+  },
+  {
+    monthYear: 'Jun 2026',
     name: 'What Happens After You Raise',
     url: 'https://www.linkedin.com/posts/fedor-gubiev-325a34293_i-walked-into-the-venture-forward-programme-share-7469718092076621824-SC2c/',
     location: 'Foundervine · London',
