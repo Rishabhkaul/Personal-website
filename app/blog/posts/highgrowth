@@ -1,0 +1,294 @@
+---
+title: "Why Some AI Companies Go from $0 to $10M+ ARR in Months"
+description: "Why the fastest-growing AI infrastructure companies sell to frontier AI companies, learn tomorrow's problems early, and scale through a handful of high-value customers."
+date: "2026-07-17"
+slug: "ai-infrastructure-frontier-startups"
+tags:
+  - AI
+  - Infrastructure
+  - Venture Capital
+  - Developer Tools
+published: true
+---
+
+# Why Some AI Companies Go from $0 to $10M+ ARR in Months
+
+For the last few months, I've been seeing companies that are quickly going from $0 to $5M, $10M, even $15M in annualised revenue in a matter of months.
+
+Broadly, they seem to fall into two buckets.
+
+## Bucket 1: Vertical AI Applications
+
+The first are selling to SMBs, where it's a small ticket size. The product itself need not be that sophisticated. It's observing the problems of a large TAM (healthcare, legal, accounting, restaurants, HVAC, solo entrepreneurs, etc.) and building vertical AI products around it.
+
+This is where all the voice AI application companies, AI employees, and "11x for X" companies sit.
+
+Their fundraising blurb usually sounds something like:
+
+> *We're building the AI operating system for [vertical]. Since launch, we've reached $700K ARR in four months and are now raising a $10M Seed round.*
+
+## Bucket 2: AI Infrastructure
+
+The second category is very different.
+
+These companies are building infrastructure, memory, inference, security, reinforcement learning, developer tools, and other pieces of the AI stack.
+
+Their fundraising memo often reads something like:
+
+> *We've gone from zero to $12M ARR in six months since our pre-seed and are now raising a $30M Seed round.*
+
+The first time you see numbers like that, they almost don't register.
+
+How does a company go from zero to eight figures in revenue in a matter of months?
+
+This post is about that second category.
+
+I've now met and worked with a few of these companies to notice what feels like the same pattern repeating itself.
+
+---
+
+# They're Not Selling to Enterprise. They're Selling to the Companies Furthest Ahead.
+
+The obvious answer is that they're selling to enterprise.
+
+Maybe.
+
+Maybe not.
+
+The interesting part is **which** enterprises they're selling to.
+
+Think about companies like Anthropic, OpenAI, Lovable, Harvey, Sierra, ElevenLabs, and a hundred other AI-native companies that have raised hundreds of millions of dollars over the last couple of years.
+
+You know the companies I'm talking about.
+
+These companies are themselves on a treadmill.
+
+- Every 12 months (maybe even six?) they need to justify a much higher valuation.
+- Every month they need to keep growing revenue.
+- Every week they need to keep shipping new capabilities.
+
+As a result, they're constantly running into technical bottlenecks that almost nobody (or a very small subset of companies) has yet experienced.
+
+That's what makes them such interesting customers.
+
+---
+
+# The Frontier Always Sees the Problems First
+
+Imagine you're building something in memory.
+
+Or inference.
+
+Or reinforcement learning.
+
+Or voice.
+
+Or agent security.
+
+And somehow you end up talking to engineers at one of these companies.
+
+During that conversation, you realise they've just run into a problem.
+
+Maybe they made a breakthrough.
+
+Maybe usage exploded.
+
+Maybe a new model architecture exposed a bottleneck they hadn't anticipated.
+
+Whatever the reason, they've suddenly encountered a problem that only they have because they're operating at a scale or speed that very few others are.
+
+They first faced the problem last month.
+
+Since then, they've already tried solving it internally.
+
+It didn't work.
+
+And somehow you've figured out a better way.
+
+You're now getting paid $100K a month.
+
+After a quick trial, it converts to a $500K-a-month contract.
+
+At first glance, those numbers sound insane.
+
+Until you think about what they're comparing you against.
+
+### Sometimes They're Buying Time
+
+Instead of spending six months building the solution internally, they can pay you today and keep their engineering team focused on the things that actually differentiate their business.
+
+### Other Times They're Buying Efficiency
+
+Suppose they're on track to spend $20M a year on inference or token costs.
+
+If your product reduces that to $12M, or even $15M, you've just saved them millions of dollars.
+
+Paying you $2M or $3M a year isn't expensive at all.
+
+It's one of the highest-ROI decisions they can make.
+
+The interesting thing is that they're often **not** comparing your price to another software vendor.
+
+They're comparing it to:
+
+- Engineering time
+- Compute costs
+- Token costs
+- Delayed product launches
+- Lost growth
+
+Against that BATNA, your software can actually be the cheaper option.
+
+---
+
+# The Advantage Isn't Always Technology
+
+One thing I hadn't appreciated before is that the moat isn't always technical.
+
+Could somebody else build the same thing?
+
+Probably.
+
+But they won't even know it's a problem until they end up talking to the same customer you did.
+
+These aren't problems you'll find on Twitter.
+
+They aren't in Gartner reports.
+
+They don't exist in the broader market yet.
+
+They're problems that only a handful of companies have because they're the ones pushing the frontier.
+
+The information advantage comes **before** the technology advantage.
+
+As an investor, what you're really underwriting is:
+
+> **Will many more companies have this problem six months from now?**
+
+---
+
+# These Companies Aren't Really Product-Led
+
+The other thing I hadn't appreciated is that these companies almost don't operate like traditional SaaS businesses.
+
+In a normal startup:
+
+1. Identify a market.
+2. Build a product.
+3. Spend years finding customers.
+
+Here it almost feels inverted.
+
+You might have some basic version of a product.
+
+But that's typically little more than an interesting feature.
+
+You first find one frontier customer.
+
+That customer exposes a problem that nobody else knows exists.
+
+You build the solution (or change your product).
+
+In the process, you discover the next problem they need solved.
+
+And then the next one.
+
+The roadmap isn't coming from some grand product strategy.
+
+It's coming from staying incredibly close to the handful of companies that are already living six months ahead of everyone else.
+
+On the product itself, I've seen multiple approaches.
+
+Sometimes there's no product at all.
+
+It's pure access.
+
+That access leads to insights.
+
+The insights lead to the product.
+
+Other times, the team had spent years building something else, used that product to get in, but then stumbled onto the new direction—discarding the old business entirely.
+
+---
+
+# Customer Concentration Is Almost a Feature
+
+There's a very peculiar situation these companies often find themselves in.
+
+Your revenue puts you in the top 0.1% of high-growth startups at your stage.
+
+But 80–90% of that revenue comes from one, two or maybe three customers.
+
+Traditional SaaS thinking says customer concentration is dangerous.
+
+Eventually, it is.
+
+But early on, I almost think it's a feature rather than a bug.
+
+The companies paying you these amounts are the ones seeing these problems first.
+
+Everyone else will get there eventually.
+
+They're simply not there yet.
+
+Which means your first few million dollars of ARR can come from just a handful of customers.
+
+You're spending:
+
+- Less time on broad GTM.
+- Less time building an organisation.
+- More time building alongside the customers that are dragging you towards the next problem they need solved.
+
+---
+
+# Marquee Customers Create the Market
+
+The other interesting thing is what happens once you land one of these customers.
+
+They're usually companies everyone has heard of.
+
+That logo immediately gets investors interested because the traction suddenly feels much more believable.
+
+You raise a much larger round.
+
+You publish a case study.
+
+Competitors of that customer begin running into exactly the same problem and start reaching out.
+
+Engineers move between companies and carry knowledge with them.
+
+Word spreads.
+
+What started as one customer slowly becomes an entire category.
+
+It almost feels like category creation in reverse.
+
+Instead of building a product and convincing the market it has a problem, you start with the handful of companies already experiencing the future, solve their problems first, and then watch the rest of the market slowly catch up.
+
+---
+
+# So What Advice Would I Give?
+
+If you're building AI infrastructure, developer tools or data-market businesses (there are probably other categories too), I wouldn't think about "enterprise" as one giant bucket.
+
+I'd think about getting into the rooms where the companies furthest ahead are spending their time.
+
+Because once you're in those rooms, you stop guessing what to build.
+
+You start hearing about tomorrow's problems months before everyone else does.
+
+Those problems are usually:
+
+- Urgent
+- Incredibly expensive
+- Impossible to Google
+
+Solve them well, and the next set of problems usually comes from the same customer.
+
+The fastest-growing AI infrastructure companies I've met aren't necessarily the ones that predicted the future better than everyone else.
+
+They're the ones that positioned themselves close enough to the frontier that they got to watch the future arrive first.
+
+And yes, once the revenue starts flowing in...
+
+Please convert them to annual contracts. 🙂
