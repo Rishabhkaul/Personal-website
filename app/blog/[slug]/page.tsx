@@ -1,3 +1,4 @@
+import type { Metadata } from 'next'
 import { notFound } from 'next/navigation'
 import { CustomMDX } from 'app/components/mdx'
 import { formatDate, getBlogPosts } from 'app/blog/utils'
@@ -15,7 +16,7 @@ export async function generateMetadata({
   params,
 }: {
   params: Promise<{ slug: string }>
-}) {
+}): Promise<Metadata | undefined> {
   const { slug } = await params
   let post = getBlogPosts().find((post) => post.slug === slug)
   if (!post) {
@@ -28,19 +29,23 @@ export async function generateMetadata({
     summary: description,
     image,
   } = post.metadata
+  let canonicalUrl = `${baseUrl}/blog/${post.slug}`
   let ogImage = image
-    ? image
+    ? `${baseUrl}${image}`
     : `${baseUrl}/og?title=${encodeURIComponent(title)}`
 
   return {
     title,
     description,
+    alternates: {
+      canonical: canonicalUrl,
+    },
     openGraph: {
       title,
       description,
       type: 'article',
       publishedTime,
-      url: `${baseUrl}/blog/${post.slug}`,
+      url: canonicalUrl,
       images: [
         {
           url: ogImage,
@@ -68,6 +73,11 @@ export default async function Blog({
     notFound()
   }
 
+  let canonicalUrl = `${baseUrl}/blog/${post.slug}`
+  let image = post.metadata.image
+    ? `${baseUrl}${post.metadata.image}`
+    : `${baseUrl}/og?title=${encodeURIComponent(post.metadata.title)}`
+
   return (
     <section>
       <script
@@ -81,15 +91,25 @@ export default async function Blog({
             datePublished: post.metadata.publishedAt,
             dateModified: post.metadata.publishedAt,
             description: post.metadata.summary,
-            image: post.metadata.image
-              ? `${baseUrl}${post.metadata.image}`
-              : `/og?title=${encodeURIComponent(post.metadata.title)}`,
-            url: `${baseUrl}/blog/${post.slug}`,
+            image,
+            url: canonicalUrl,
+            mainEntityOfPage: {
+              '@type': 'WebPage',
+              '@id': canonicalUrl,
+            },
             author: {
               '@type': 'Person',
-              name: 'Rishabh Personal Site',
+              '@id': `${baseUrl}/#person`,
+              name: 'Rishabh Kaul',
+              url: baseUrl,
             },
-          }),
+            publisher: {
+              '@type': 'Person',
+              '@id': `${baseUrl}/#person`,
+              name: 'Rishabh Kaul',
+              url: baseUrl,
+            },
+          }).replace(/</g, '\\u003c'),
         }}
       />
       <h1 className="title font-semibold text-2xl tracking-tighter">

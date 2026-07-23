@@ -8,20 +8,35 @@ import { SpeedInsights } from '@vercel/speed-insights/next'
 import Footer from './components/footer'
 import { baseUrl } from './sitemap'
 
+const siteDescription =
+  'Rishabh Kaul is a London-based early-stage investor at Hoxton Ventures, investing in AI infrastructure, developer tools and enterprise software.'
+
 export const metadata: Metadata = {
   metadataBase: new URL(baseUrl),
   title: {
-    default: 'Rishabh Personal Site',
-    template: '%s | Rishabh Personal Site',
+    default: 'Rishabh Kaul | Early-Stage Investor',
+    template: '%s | Rishabh Kaul',
   },
-  description: 'This is my portfolio.',
+  description: siteDescription,
+  applicationName: 'Rishabh Kaul',
+  authors: [{ name: 'Rishabh Kaul', url: baseUrl }],
+  creator: 'Rishabh Kaul',
+  publisher: 'Rishabh Kaul',
+  alternates: {
+    canonical: '/',
+  },
   openGraph: {
-    title: 'Rishabh Personal Site',
-    description: 'This is my portfolio.',
+    title: 'Rishabh Kaul | Early-Stage Investor',
+    description: siteDescription,
     url: baseUrl,
-    siteName: 'Rishabh Personal Site',
+    siteName: 'Rishabh Kaul',
     locale: 'en_US',
-    type: 'website',
+    type: 'profile',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Rishabh Kaul | Early-Stage Investor',
+    description: siteDescription,
   },
   robots: {
     index: true,
