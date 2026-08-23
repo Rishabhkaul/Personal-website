@@ -12,9 +12,6 @@ const projects = [
       'Dashboard to track the risk of catastrophic failure in the global economy',
     githubUrl: 'https://github.com/Rishabhkaul/macro-risk-dashboard',
   },
-  'Founder and operator initiatives across Europe, India, and the US.',
-  'Angel investments and advisory support for early-stage startups.',
-  'Community events and meetups focused on startups and technology.',
 ]
 
 export default function ProjectsPage() {
