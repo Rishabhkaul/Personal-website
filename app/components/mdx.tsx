@@ -3,6 +3,7 @@ import Image from 'next/image'
 import { compile, run } from '@mdx-js/mdx'
 import { highlight } from 'sugar-high'
 import React from 'react'
+import { Tweet } from 'react-tweet'
 import * as runtime from 'react/jsx-runtime'
 
 function Table({ data }) {
@@ -98,6 +99,7 @@ let components = {
   a: CustomLink,
   code: Code,
   Table,
+  Tweet,
 }
 
 export async function CustomMDX(props) {
