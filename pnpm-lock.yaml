@@ -47,6 +47,9 @@ importers:
       react-dom:
         specifier: 18.2.0
         version: 18.2.0(react@18.2.0)
+      react-tweet:
+        specifier: ^3.2.2
+        version: 3.2.2(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
       sugar-high:
         specifier: ^0.6.0
         version: 0.6.1
@@ -58,6 +61,25 @@ importers:
         version: 5.3.3
 
 packages:
+
+  clsx@2.1.1:
+    resolution: {}
+
+  react-tweet@3.2.2:
+    resolution: {}
+    peerDependencies:
+      react: ^18.2.0 || ^19.0.0
+      react-dom: ^18.2.0 || ^19.0.0
+
+  swr@2.3.6:
+    resolution: {}
+    peerDependencies:
+      react: ^18.0.0 || ^19.0.0
+
+  use-sync-external-store@1.6.0:
+    resolution: {}
+    peerDependencies:
+      react: ^16.8.0 || ^17.0.0 || ^18.0.0 || ^19.0.0
 
   '@emnapi/runtime@1.8.1':
     resolution: {integrity: sha512-mehfKSMWjjNol8659Z8KxEMrdSJDDot5SXMq00dM8BN4o+CLNXQ0xH2V7EchNHV4RmbZLmmPdEaXZc5H2FXmDg==}
@@ -973,6 +995,25 @@ packages:
     resolution: {integrity: sha512-bXE4cR/kVZhKZX/RjPEflHaKVhUVl85noU3v6b8apfQEc1x4A+zBxjZ4lN8LqGd6WZ3dl98pY4o717VFmoPp+A==}
 
 snapshots:
+
+  clsx@2.1.1: {}
+
+  react-tweet@3.2.2(react-dom@18.2.0(react@18.2.0))(react@18.2.0):
+    dependencies:
+      clsx: 2.1.1
+      react: 18.2.0
+      react-dom: 18.2.0(react@18.2.0)
+      swr: 2.3.6(react@18.2.0)
+
+  swr@2.3.6(react@18.2.0):
+    dependencies:
+      dequal: 2.0.3
+      react: 18.2.0
+      use-sync-external-store: 1.6.0(react@18.2.0)
+
+  use-sync-external-store@1.6.0(react@18.2.0):
+    dependencies:
+      react: 18.2.0
 
   '@emnapi/runtime@1.8.1':
     dependencies:
